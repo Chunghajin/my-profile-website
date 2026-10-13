@@ -7,7 +7,7 @@ for (const id of ['home','about','projects','contact']) {
   assert(html.includes(`href="#${id}"`));
 }
 assert(!html.includes('href="#"'));
-assert.equal((html.match(/class="project-main-link"/g) || []).length, 3);
+assert.equal((html.match(/class="project-main-link"/g) || []).length, 4);
 assert(html.includes('href="mailto:hong@example.com"'));
 const elements = {};
 for (const id of ['emailText','copyEmailBtn','contactForm','senderSubject','senderMessage','senderName','senderEmail','formSuccessToast']) {
